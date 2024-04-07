@@ -10,6 +10,7 @@ import java.util.List;
 
 public class RefactorManager {
     private final Trinity trinity;
+
     private final List<GlobalRenameType> globalRenameTypes = List.of(new FullGlobalRenameType(), new EnumFieldsGlobalRenameType(), new MixinGlobalRenameType());
 
     public RefactorManager(Trinity trinity) {

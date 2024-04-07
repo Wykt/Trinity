@@ -17,6 +17,7 @@ import me.f1nal.trinity.gui.frames.impl.constant.ConstantSearchFrame;
 import me.f1nal.trinity.gui.frames.impl.cp.ProjectBrowserFrame;
 import me.f1nal.trinity.gui.frames.impl.project.create.NewProjectFrame;
 import me.f1nal.trinity.gui.frames.impl.project.settings.ProjectSettingsWindow;
+import me.f1nal.trinity.gui.frames.impl.refactor.ClearLocalVariablesAndParametersWindow;
 import me.f1nal.trinity.gui.frames.impl.refactor.GlobalRenameWindow;
 import me.f1nal.trinity.gui.frames.impl.themes.ThemeEditorFrame;
 import me.f1nal.trinity.gui.frames.impl.xref.search.XrefSearchFrame;
@@ -95,6 +96,11 @@ public class MainMenuBar {
                 if (ImGui.menuItem("Global Rename")) {
                     displayManager.addStaticWindow(GlobalRenameWindow.class);
                 }
+
+                if(ImGui.menuItem("Clear local variables & parameters")) {
+                    displayManager.addStaticWindow(ClearLocalVariablesAndParametersWindow.class);
+                }
+
                 ImGui.endMenu();
             }
         }
