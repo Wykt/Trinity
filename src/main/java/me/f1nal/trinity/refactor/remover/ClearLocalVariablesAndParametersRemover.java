@@ -32,7 +32,7 @@ public final class ClearLocalVariablesAndParametersRemover {
             }
 
             if(count > 0) {
-                classInput.notifyModified(ModifyPriority.LOW);
+                classInput.notifyModified(ModifyPriority.HIGH);
             }
         }
     }
