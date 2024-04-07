@@ -32,8 +32,5 @@ public final class ClearLocalVariablesAndParametersWindow extends StaticWindow {
 
     private void runRefactor(final Execution execution) {
         remover.runRefactor(execution);
-
-        // FIXME: does not refresh decompiler text...
-        Main.getEventBus().post(new EventRefreshDecompilerText(dc -> true));
     }
 }
